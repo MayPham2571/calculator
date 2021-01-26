@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type"text/css" href="./MenuBar.css">
+    <link rel="stylesheet" type"text/css" href="./Converter.css">
     <title>Calculator</title>
+
 </head>
 <body>
     <!-- Menu bar here -->
+    <div class="topnav dropdown" id="myTopnav">
+        <div class="icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="dropdown-content">
+                <button class="tablink" onclick="openPage('Calculator', this, '#333333')">Calculator</button>
+                <button class="tablink" onclick="openPage('Converter', this, '#333333')">Converter</button>
+            </div>
+        
+        </div>
+    </div>
+    <div id="Calculator"></div>
+    <div id="Converter"></div>
     
     <!-- Standard Code here -->
     
     <!-- Length Code here -->
+
+
+
+    <script src="MenuBar.js"></script>
+    <script src="Converter.js"></script>
 </body>
 </html>
