@@ -28,10 +28,9 @@ function openPage(pageName,elmnt,color) {
         document.getElementById("title").innerHTML = "Standard";
         
     }
-    else {
+    else 
         document.getElementById("title").innerHTML = "Length";
-        
-    }
+    
 }
   
   // Get the element with id="defaultOpen" and click on it
