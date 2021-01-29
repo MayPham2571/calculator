@@ -6,9 +6,9 @@
 // function changeIcon(x) {
 //     x.classList.toggle("change");
 // }
-
-
-
+function changePage(){
+  
+}
 
 
 function openPage(pageName,elmnt,color) {
