@@ -33,9 +33,9 @@ for (var i = 0; i < operator.length; i++) {
             printCurrent(output);
         } else if (this.id == "clear-entry") {
             printPrevious("");
-            printCurrent("");
+            printCurrent("0");
         } else if (this.id == "clear") {
-            printCurrent("");
+            printCurrent("0");
         } else if ((this.id == "1/") || (this.id == "sqr(") || (this.id == "sqrt(") || (this.id == "percent")) {
             var output = getCurrent();
             var history = getPrevious();
@@ -89,7 +89,7 @@ for (var i = 0; i < operator.length; i++) {
                     history = result + this.id;
                     result = getFormattedNumber(result);
                     printPrevious(history);
-                    printCurrent("");
+                    printCurrent("0");
                 }
             }
         }
