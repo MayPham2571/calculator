@@ -6,9 +6,14 @@
 // function changeIcon(x) {
 //     x.classList.toggle("change");
 // }
-function changePage(){
-  
-}
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
 
 
 function openPage(pageName,elmnt,color) {
