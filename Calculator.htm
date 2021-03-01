@@ -4,29 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type "text/css" href="./MenuBar.css">
-    <link rel="stylesheet" type "text/css" href="./Converter.css">
-    <link rel="stylesheet" type "text/css" href="./Standard.css">
+    <link rel="stylesheet" type="text/css" href="./MenuBar.css">
+    <link rel="stylesheet" type="text/css" href="./Converter.css">
+    <link rel="stylesheet" type="text/css" href="./Standard.css">
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+
     <title>Calculator</title>
 
 </head>
 
 <body>
     <!-- Menu bar here -->
-    <div class="topnav dropdown">
-        <div class="icon container-content">&#9776;
+    <div class="">
+        <div class="topnav dropdown">
+        <div class="icon container-content">&#9776; 
             <div class="dropdown-content">
                 <button class="tablink" onclick="openPage('Calculator', this, '#333333')">Calculator</button>
                 <button class="tablink" onclick="openPage('Converter', this, '#333333')">Converter</button>
             </div>
 
         </div>
+        <div class="container-content title" id="title"> Standard </div>
     </div>
     <div id="Calculator"></div>
     <div id="Converter"></div>
-
+    
+    </div>
+    
     <!-- Standard Code here -->
-    <div class="container">
+    
+    <div class="container" id="standard">
         <div class="Standard-container">
             <div class="output">
                 <p class="previous1" id="previous"></p>
@@ -60,44 +67,71 @@
 
 
     </div>
-
+    
     <!-- Length Code here -->
-    <div class="container-converter">
+    <div class="container-converter" id="converter" >
         <div class="mainboard">
-            <div>
+            <!-- Display of length -->
+              
                 <div class="board1">
                     <div class="title container-content">0</div>
-                    <div class="dropdown title" style="font-size: 20px; color: white;">Centimeters
-                        <div class="dropdown-content">
-                            <button class="tabconvert" onclick="">Inches</button>
-                            <button class="tabconvert" onclick="">Kilometers</button>
-                            <button class="tabconvert" onclick="">Meters</button>
-                            <button class="tabconvert" onclick="">Milimeters</button>
+                    <div class="dropdown title " style="font-size: 20px; color: white;">Centimeters
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin: 8px 0 0 10px; float:right; ">&#9660; 
+                            <div class="dropdown-convert-content">
+                                <button class="tabconvert" onclick="">Inches</button>
+                                <button class="tabconvert" onclick="">Kilometers</button>
+                                <button class="tabconvert" onclick="">Meters</button>
+                                <button class="tabconvert" onclick="">Milimeters</button>
+                                <button class="tabconvert" onclick="">Centimeters</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
 
+                
                 <div class="board2">
                     <div class="title container-content">0</div>
                     <div class="dropdown title" style="font-size: 20px; color: white;">Inches
-                        <div class="dropdown-content">
-                            <button class="tabconvert" onclick="">Inches</button>
-                            <button class="tabconvert" onclick="">Kilometers</button>
-                            <button class="tabconvert" onclick="">Meters</button>
-                            <button class="tabconvert" onclick="">Milimeters</button>
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin: 8px 0 0 10px; float:right;"> &#9660;
+                            <div class="dropdown-convert-content">
+                                <button class="tabconvert" onclick="">Centimeters</button>
+                                <button class="tabconvert" onclick="">Kilometers</button>
+                                <button class="tabconvert" onclick="">Meters</button>
+                                <button class="tabconvert" onclick="">Milimeters</button>
+                                <button class="tabconvert" onclick="">Inches</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-
+                <!-- Numpads -->
+                <div class="calculator-display">
+                    <div class="calculator-keys">
+                        <button class="container-content button">7</button>
+                        <button class="container-content button">8</button>
+                        <button class="container-content button">9</button>
+                        <button class="container-content button">4</button>
+                        <button class="container-content button">5</button>
+                        <button class="container-content button">6</button>
+                        <button class="container-content button">1</button>
+                        <button class="container-content button">2</button>
+                        <button class="container-content button">3</button>
+                        <button class="container-content button">0</button>
+                        <button class="container-content button" data-action="decimal">.</button>
+                        <button class="container-content button-clear" data-action="clear">AC</button>
+                    </div>
+                </div>
+            
         </div>
     </div>
 
     <script src="MenuBar.js"></script>
     <script src="Converter.js"></script>
     <script src="Standard.js"></script>
+<<<<<<< HEAD
+=======
+    <script></script>
+>>>>>>> feature/Converter
 </body>
 
 </html>

@@ -58,7 +58,8 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 14px 16px;
     z-index: 1;
-  }
+}
+
 .topnav a:hover, .dropdown:hover .dropdown-content{
     display: block;
     background-color: #555555;
@@ -84,6 +85,13 @@
   
 .tablink:hover {
     background-color: #777;
+}
+
+#converter {
+    display: "";
+}
+#standard {
+    display:"";
 }
 
 #Calculator {background-color: #333333;}
