@@ -87,5 +87,12 @@
     background-color: #777;
 }
 
+#converter {
+    display: "";
+}
+#standard {
+    display:"";
+}
+
 #Calculator {background-color: #333333;}
 #Converter {background-color: #333333;}
