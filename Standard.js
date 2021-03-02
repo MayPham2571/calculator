@@ -109,6 +109,8 @@ for (var i = 0; i < number.length; i++) {
                 output += this.id;
                 printCurrent(output);
             } else {
+                console.log(this.id);
+                
                 output += this.id;
                 output = getFormattedNumber(output);
                 printCurrent(output);
