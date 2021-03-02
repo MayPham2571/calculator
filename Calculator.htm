@@ -75,16 +75,16 @@
               
                 <div class="board1">
                     <div class="title container-content" id="numberPrinted">0</div>
-                    <div id="unit"  class="dropdown title" style="font-size: 20px; color: white;">
-                            <p>Centimeters</p>
+                    <div   class="dropdown title" style="font-size: 20px; color: white;">
+                            <p id="unit">Centimeters</p>
                         <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center; ">
                             <p>&#9660;</p> 
                             <div class="dropdown-convert-content">
-                                <button class="tabconvert" onclick="">Inches</button>
-                                <button class="tabconvert" onclick="">Kilometers</button>
-                                <button class="tabconvert" onclick="">Meters</button>
-                                <button class="tabconvert" onclick="">Milimeters</button>
-                                <button class="tabconvert" onclick="">Centimeters</button>
+                                <button value="Centimeters" class="tabconvert change" onclick="innerChange(this.value)">Centimeters</button>
+                                <button value="Kilometers" class="tabconvert change" onclick="innerChange(this.value)">Kilometers</button>
+                                <button value="Meters" class="tabconvert change" onclick="innerChange(this.value)">Meters</button>
+                                <button value="Milimeters" class="tabconvert change" onclick="innerChange(this.value)">Milimeters</button>
+                                <button value="Inches" class="tabconvert change" onclick="innerChange(this.value)">Inches</button>
                             </div>
                         </div>
                     </div>
@@ -93,17 +93,17 @@
 
                 
                 <div class="board2">
-                    <div class="title container-content">0</div>
-                    <div id="units" class="dropdown title" style="font-size: 20px; color: white;">
-                        <p>Inches</p>
+                    <div class="title container-content" id="inner">0</div>
+                    <div  class="dropdown title" style="font-size: 20px; color: white;">
+                        <p id="units">Inches</p>
                         <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center;"> 
                             <p>&#9660;</p>
                             <div class="dropdown-convert-content">
-                                <button class="tabconvert" onclick="">Centimeters</button>
-                                <button class="tabconvert" onclick="">Kilometers</button>
-                                <button class="tabconvert" onclick="">Meters</button>
-                                <button class="tabconvert" onclick="">Milimeters</button>
-                                <button class="tabconvert" onclick="">Inches</button>
+                                <button value="Centimeters" class="tabconvert changed" onclick="innerChanged(this.value)">Centimeters</button>
+                                <button value="Kilometers" class="tabconvert changed" onclick="innerChanged(this.value)">Kilometers</button>
+                                <button value="Meters" class="tabconvert changed" onclick="innerChanged(this.value)">Meters</button>
+                                <button value="Milimeters" class="tabconvert changed" onclick="innerChanged(this.value)">Milimeters</button>
+                                <button value="Inches" class="tabconvert changed" onclick="innerChanged(this.value)">Inches</button>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                         <button value="3" class="container-content button">3</button>
                         <button value="0" class="container-content button">0</button>
                         <button value="." class="container-content button" data-action="decimal">.</button>
-                        <button class="container-content button-clear" data-action="clear">AC</button>
+                        <button value="AC" class="container-content button-clear" onclick="clearNum()"><span id="AC">AC</span></button>
                     </div>
                 </div>
             
