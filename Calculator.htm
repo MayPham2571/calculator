@@ -74,9 +74,11 @@
             <!-- Display of length -->
               
                 <div class="board1">
-                    <div class="title container-content">0</div>
-                    <div class="dropdown title " style="font-size: 20px; color: white;">Centimeters
-                        <div class="dropdown icon" style="color: white; font-size: 10px; margin: 8px 0 0 10px; float:right; ">&#9660; 
+                    <div class="title container-content" id="numberPrinted">0</div>
+                    <div id="unit"  class="dropdown title" style="font-size: 20px; color: white;">
+                            <p>Centimeters</p>
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center; ">
+                            <p>&#9660;</p> 
                             <div class="dropdown-convert-content">
                                 <button class="tabconvert" onclick="">Inches</button>
                                 <button class="tabconvert" onclick="">Kilometers</button>
@@ -92,8 +94,10 @@
                 
                 <div class="board2">
                     <div class="title container-content">0</div>
-                    <div class="dropdown title" style="font-size: 20px; color: white;">Inches
-                        <div class="dropdown icon" style="color: white; font-size: 10px; margin: 8px 0 0 10px; float:right;"> &#9660;
+                    <div id="units" class="dropdown title" style="font-size: 20px; color: white;">
+                        <p>Inches</p>
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center;"> 
+                            <p>&#9660;</p>
                             <div class="dropdown-convert-content">
                                 <button class="tabconvert" onclick="">Centimeters</button>
                                 <button class="tabconvert" onclick="">Kilometers</button>
@@ -107,17 +111,17 @@
                 <!-- Numpads -->
                 <div class="calculator-display">
                     <div class="calculator-keys">
-                        <button class="container-content button">7</button>
-                        <button class="container-content button">8</button>
-                        <button class="container-content button">9</button>
-                        <button class="container-content button">4</button>
-                        <button class="container-content button">5</button>
-                        <button class="container-content button">6</button>
-                        <button class="container-content button">1</button>
-                        <button class="container-content button">2</button>
-                        <button class="container-content button">3</button>
-                        <button class="container-content button">0</button>
-                        <button class="container-content button" data-action="decimal">.</button>
+                        <button value="7" class="container-content button">7</button>
+                        <button value="8" class="container-content button">8</button>
+                        <button value="9" class="container-content button">9</button>
+                        <button value="4" class="container-content button">4</button>
+                        <button value="5" class="container-content button">5</button>
+                        <button value="6" class="container-content button">6</button>
+                        <button value="1" class="container-content button">1</button>
+                        <button value="2" class="container-content button">2</button>
+                        <button value="3" class="container-content button">3</button>
+                        <button value="0" class="container-content button">0</button>
+                        <button value="." class="container-content button" data-action="decimal">.</button>
                         <button class="container-content button-clear" data-action="clear">AC</button>
                     </div>
                 </div>
