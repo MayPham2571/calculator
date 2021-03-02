@@ -1,0 +1,22 @@
+{
+  "name": "calculator-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayPham2571/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayPham2571/calculator/issues"
+  },
+  "homepage": "https://github.com/MayPham2571/calculator#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

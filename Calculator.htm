@@ -1,15 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./MenuBar.css">
+    <link rel="stylesheet" type="text/css" href="./Converter.css">
+    <link rel="stylesheet" type="text/css" href="./Standard.css">
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+
     <title>Calculator</title>
+
 </head>
+
 <body>
     <!-- Menu bar here -->
+    <div class="">
+        <div class="topnav dropdown">
+        <div class="icon container-content">&#9776; 
+            <div class="dropdown-content">
+                <button class="tablink" onclick="openPage('Calculator', this, '#333333')">Calculator</button>
+                <button class="tablink" onclick="openPage('Converter', this, '#333333')">Converter</button>
+            </div>
+
+        </div>
+        <div class="container-content title" id="title"> Standard </div>
+    </div>
+    <div id="Calculator"></div>
+    <div id="Converter"></div>
+    
+    </div>
     
     <!-- Standard Code here -->
     
+    <div class="container" id="standard">
+        <div class="Standard-container">
+            <div class="output">
+                <p class="previous1" id="previous"></p>
+                <p class="current1" id="current">0</p>
+            </div>
+            <button id="percent" class="operator">%</button>
+            <button id="clear-entry" class="operator">CE</button>
+            <button id="clear" class="operator">C</button>
+            <button id="delete" class="operator">DEL</button>
+            <button id="1/" class="operator">&#185;&#8725;&#8339;</button>
+            <button id="sqr(" class="operator">x&#178;</button>
+            <button id="sqrt(" class="operator">&#178;&radic;x</button>
+            <button id="÷" class="operator">÷</button>
+            <button id="7" class="number">7</button>
+            <button id="8" class="number">8</button>
+            <button id="9" class="number">9</button>
+            <button id="×" class="operator">×</button>
+            <button id="4" class="number">4</button>
+            <button id="5" class="number">5</button>
+            <button id="6" class="number">6</button>
+            <button id="-" class="operator">-</button>
+            <button id="1" class="number">1</button>
+            <button id="2" class="number">2</button>
+            <button id="3" class="number">3</button>
+            <button id="+" class="operator">+</button>
+            <button id="-" class="number">⁺⁄₋</button>
+            <button id="0" class="number">0</button>
+            <button id="." class="number">.</button>
+            <button id="=" class="operator equals">&equals;</button>
+        </div>
+
+
+    </div>
+    
     <!-- Length Code here -->
+    <div class="container-converter" id="converter" >
+        <div class="mainboard">
+            <!-- Display of length -->
+              
+                <div class="board1">
+                    <div class="title container-content" id="numberPrinted">0</div>
+                    <div   class="dropdown title" style="font-size: 20px; color: white;">
+                            <p id="unit">Centimeters</p>
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center; ">
+                            <p>&#9660;</p> 
+                            <div class="dropdown-convert-content">
+                                <button value="Centimeters" class="tabconvert change" onclick="innerChange(this.value)">Centimeters</button>
+                                <button value="Kilometers" class="tabconvert change" onclick="innerChange(this.value)">Kilometers</button>
+                                <button value="Meters" class="tabconvert change" onclick="innerChange(this.value)">Meters</button>
+                                <button value="Milimeters" class="tabconvert change" onclick="innerChange(this.value)">Milimeters</button>
+                                <button value="Inches" class="tabconvert change" onclick="innerChange(this.value)">Inches</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="board2">
+                    <div class="title container-content" id="inner">0</div>
+                    <div  class="dropdown title" style="font-size: 20px; color: white;">
+                        <p id="units">Inches</p>
+                        <div class="dropdown icon" style="color: white; font-size: 10px; margin-left: 10px; align-items:center;"> 
+                            <p>&#9660;</p>
+                            <div class="dropdown-convert-content">
+                                <button value="Centimeters" class="tabconvert changed" onclick="innerChanged(this.value)">Centimeters</button>
+                                <button value="Kilometers" class="tabconvert changed" onclick="innerChanged(this.value)">Kilometers</button>
+                                <button value="Meters" class="tabconvert changed" onclick="innerChanged(this.value)">Meters</button>
+                                <button value="Milimeters" class="tabconvert changed" onclick="innerChanged(this.value)">Milimeters</button>
+                                <button value="Inches" class="tabconvert changed" onclick="innerChanged(this.value)">Inches</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Numpads -->
+                <div class="calculator-display">
+                    <div class="calculator-keys">
+                        <button value="7" class="container-content button">7</button>
+                        <button value="8" class="container-content button">8</button>
+                        <button value="9" class="container-content button">9</button>
+                        <button value="4" class="container-content button">4</button>
+                        <button value="5" class="container-content button">5</button>
+                        <button value="6" class="container-content button">6</button>
+                        <button value="1" class="container-content button">1</button>
+                        <button value="2" class="container-content button">2</button>
+                        <button value="3" class="container-content button">3</button>
+                        <button value="0" class="container-content button">0</button>
+                        <button value="." class="container-content button" data-action="decimal">.</button>
+                        <button value="AC"  class="container-content button-clear" onclick="clearNum()"><span id="AC">AC</span></button>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    <script src="MenuBar.js"></script>
+    <script src="Converter.js"></script>
+    <script src="Standard.js"></script>
 </body>
+
 </html>
